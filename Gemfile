@@ -22,9 +22,12 @@ gem 'bourbon'
 gem 'friendly_id', '~> 5.1.0'
 gem 'font-awesome-rails'
 gem 'puma'
-gem 'pg'
-gem 'rails_12factor'
 gem 'appsignal'
+
+group :production do
+    gem 'pg', '~> 0.18.4'
+    gem 'rails_12factor', '~> 0.0.3'
+end
 
 group :development, :test do
   gem 'spring'
