@@ -48,7 +48,6 @@ group :development do
   gem 'guard-livereload', '~> 2.4', require: false
   gem 'better_errors'
   gem 'letter_opener'
-  gem 'pg'
 end
 
 group :test do
